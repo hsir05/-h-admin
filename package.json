@@ -5,14 +5,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:dev": "vite build --mode development",
+    "build:pro": "vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
+    "naive-ui": "^2.25.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",
+    "vfonts": "^0.0.3",
     "vue": "^3.2.25",
     "vue-router": "4"
   },
@@ -22,7 +26,6 @@
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "@vitejs/plugin-vue": "^2.2.0",
-    "dart-sass": "^1.25.0",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
