@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "nprogress": "^0.2.0",
+    "pinia": "^2.0.0-rc.10",
     "vue": "^3.2.25",
     "vue-router": "4"
   },
