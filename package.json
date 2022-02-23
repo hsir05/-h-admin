@@ -13,6 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@vueuse/core": "^7.6.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",
     "vue": "^3.2.25",
@@ -50,9 +51,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "yarn lint",
-      "prettier --write",
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
       "git add"
     ]
   }
