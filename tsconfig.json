@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "naive-ui/volar"],
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
