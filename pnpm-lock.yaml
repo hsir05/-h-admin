@@ -5,6 +5,7 @@ specifiers:
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^5.12.0
   '@typescript-eslint/parser': ^5.12.0
+  '@vicons/ionicons5': ^0.12.0
   '@vitejs/plugin-vue': ^2.2.0
   '@vueuse/core': ^7.6.2
   eslint: ^8.9.0
@@ -35,6 +36,7 @@ dependencies:
   '@vueuse/core': 7.6.2_vue@3.2.31
   nprogress: 0.2.0
   pinia: 2.0.0-rc.10_typescript@4.5.5+vue@3.2.31
+  vfonts: 0.0.3
   vue: 3.2.31
   vue-router: 4.0.12_vue@3.2.31
 
@@ -43,6 +45,7 @@ devDependencies:
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 5.12.0_c467cf9bb49b295941e83ce479a578b7
   '@typescript-eslint/parser': 5.12.0_eslint@8.9.0+typescript@4.5.5
+  '@vicons/ionicons5': 0.12.0
   '@vitejs/plugin-vue': 2.2.2_vite@2.8.4+vue@3.2.31
   eslint: 8.9.0
   eslint-config-prettier: 8.4.0_eslint@8.9.0
@@ -57,7 +60,6 @@ devDependencies:
   sass: 1.49.8
   typescript: 4.5.5
   unplugin-vue-components: 0.17.18_vite@2.8.4+vue@3.2.31
-  vfonts: 0.0.3
   vite: 2.8.4_sass@1.49.8
   vite-plugin-compression: 0.5.1_vite@2.8.4
   vite-plugin-html: 3.0.6_vite@2.8.4
@@ -399,6 +401,10 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.12.0
       eslint-visitor-keys: 3.3.0
+    dev: true
+
+  /@vicons/ionicons5/0.12.0:
+    resolution: {integrity: sha512-Iy1EUVRpX0WWxeu1VIReR1zsZLMc4fqpt223czR+Rpnrwu7pt46nbnC2ycO7ItI/uqDLJxnbcMC7FujKs9IfFA==}
     dev: true
 
   /@vitejs/plugin-vue/2.2.2_vite@2.8.4+vue@3.2.31:
@@ -4239,7 +4245,6 @@ packages:
 
   /vfonts/0.0.3:
     resolution: {integrity: sha512-nguyw8L6Un8eelg1vQ31vIU2ESxqid7EYmy8V+MDeMaHBqaRSkg3dTBToC1PR00D89UzS/SLkfYPnx0Wf23IQQ==}
-    dev: true
 
   /vite-plugin-compression/0.5.1_vite@2.8.4:
     resolution: {integrity: sha512-5QJKBDc+gNYVqL/skgFAP81Yuzo9R+EAf19d+EtsMF/i8kFUpNi3J/H01QD3Oo8zBQn+NzoCIFkpPLynoOzaJg==}

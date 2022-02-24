@@ -16,6 +16,7 @@
     "@vueuse/core": "^7.6.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",
+    "vfonts": "^0.0.3",
     "vue": "^3.2.25",
     "vue-router": "4"
   },
@@ -24,6 +25,7 @@
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^2.2.0",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
@@ -38,7 +40,6 @@
     "sass": "^1.49.8",
     "typescript": "^4.5.4",
     "unplugin-vue-components": "^0.17.18",
-    "vfonts": "^0.0.3",
     "vite": "^2.8.0",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-html": "^3.0.6",

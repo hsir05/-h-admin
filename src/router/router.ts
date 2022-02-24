@@ -1,18 +1,27 @@
 import { App } from "vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import { createRouterGuard } from "./routeGuard";
+import ParentLayout from "@/layout/parentLayout.vue"
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    name: "Welcome",
-    component: () => import("@/views/dashboard/welcome/Welcome.vue"), // 注意这里要带上 文件后缀.vue
+    name: "dashoard",
+    component: ParentLayout,
+    children: [
+        {
+            path: "/welcome",
+            name: 'Welcome',
+            component: () => import("@/views/dashboard/welcome/Welcome.vue"),
+        },
+        {
+            path: "/workbench",
+            name: "Workbench",
+            component: () => import("@/views/dashboard/workbench/Workbench.vue"),
+        },
+    ]
   },
-  {
-    path: "/workbench",
-    name: "Workbench",
-    component: () => import("@/views/dashboard/workbench/Workbench.vue"), // 注意这里要带上 文件后缀.vue
-  },
+  
 ];
 
 const router = createRouter({
