@@ -9,6 +9,7 @@
     @collapse="collapsed = true"
     @expand="collapsed = false"
   >
+    <AppLogo />
     <n-menu
       :collapsed="collapsed"
       :collapsed-width="64"
@@ -27,12 +28,12 @@ import type { MenuOption } from "naive-ui";
 import { h } from "vue";
 import { NIcon } from "naive-ui";
 import { BookmarkOutline, CaretDownOutline } from "@vicons/ionicons5";
+import AppLogo from "@/components/AppLogo/AppLogo.vue";
 export default defineComponent({
   name: "LayoutSider",
-  // components: {
-  //     BookmarkOutline,
-  //     CaretDownOutline
-  // },
+  components: {
+    AppLogo,
+  },
   setup() {
     return {
       collapsed: ref(true),
