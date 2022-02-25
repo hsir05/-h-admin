@@ -6,6 +6,7 @@ import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
 import { visualizer } from "rollup-plugin-visualizer";
 import compressPlugin from "vite-plugin-compression";
 import { createHtmlPlugin } from "vite-plugin-html";
+import WindiCSS from 'vite-plugin-windicss'
 
 export default defineConfig({
   plugins: [
@@ -51,6 +52,7 @@ export default defineConfig({
         },
       },
     }),
+    WindiCSS(),
   ],
   resolve: {
     alias: [

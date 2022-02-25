@@ -244,3 +244,35 @@ pnpm dev // 启动
     }
 
     ```
+
+7. css原子化 windicss
+
+    ```js
+    安装 
+
+    pnpm add vite-plugin-windicss windicss 
+
+    main.ts
+    import 'virtual:windi.css'
+
+    vite.config.ts
+    import WindiCSS from 'vite-plugin-windicss'
+
+    export default {
+        plugins: [
+            WindiCSS(),
+        ],
+    }
+
+    Configuration
+    windi.config.ts
+    import { defineConfig } from 'vite-plugin-windicss'
+
+    export default defineConfig({
+        preflight: false,
+    })
+
+    ```
+
+     [windi 官网](https://windicss.org/integrations/vite.html)
+

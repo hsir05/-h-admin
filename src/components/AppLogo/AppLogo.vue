@@ -1,4 +1,5 @@
 <template>
-  <div class="" style="height: 60px">applogo</div>
+  <div class=""></div>
 </template>
 <script lang="ts" setup></script>
+<style lang="scss"></style>
