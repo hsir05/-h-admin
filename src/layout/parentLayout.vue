@@ -2,7 +2,7 @@
   <n-layout has-sider content-style="height:100vh">
     <LayoutSider />
     <n-layout content-style="height:100vh">
-      <n-layout-header>颐和园路</n-layout-header>
+      <LayoutHeader />
       <n-layout-content
         content-style="padding: 24px;height: calc(100vh - 70px)"
       >
@@ -14,12 +14,13 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import LayoutSider from "./layoutSider/LayoutSider.vue";
-
+import LayoutSider from "./sider/Sider.vue";
+import LayoutHeader from "./header/Header.vue";
 export default defineComponent({
   name: "ParentLayout",
   components: {
     LayoutSider,
+    LayoutHeader,
   },
   setup() {
     return {};

@@ -36,7 +36,7 @@ export default defineComponent({
   },
   setup() {
     return {
-      collapsed: ref(true),
+      collapsed: ref(false),
       menuOptions,
       renderMenuLabel(option: MenuOption) {
         if ("href" in option) {
